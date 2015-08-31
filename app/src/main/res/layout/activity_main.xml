@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4FAAB1"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/vs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    android:weightSum="2"
+    android:layout_marginTop="320dp">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/vslogo"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="VERI"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:id="@+id/textView" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="SUPPLLIER"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:textStyle="bold"
+            android:id="@+id/textView1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="100dp"
+
+        android:gravity="bottom"
+        >
+        <Button
+            android:id="@+id/buttonSignIN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="Sign In"
+            android:layout_weight="1"
+            android:background="#4FAAB1"
+
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:onClick="signIn"/>
+
+
+        <Button
+            android:id="@+id/buttonSignIUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="Sign Up"
+            android:layout_weight="1"
+            android:background="#4FAAB1"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:onClick="signIn"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        android:gravity="bottom"
+        >
+        <Button
+            android:id="@+id/buttonSignI1N"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:text="Sign In"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:onClick="signIn"/>
+
+
+        <Button
+            android:id="@+id/buttonSign1IUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:text="Sign Up"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@drawable/border_white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:onClick="signIn"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="www.verisupplier.com"
+        android:id="@+id/textView2"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
+
